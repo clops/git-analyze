@@ -9,6 +9,7 @@ prefilter_log() {
 
 gen_data() {
     git log --format="format:%ai author"
+    echo
     git log --format="format:%ci commit"
 }
 

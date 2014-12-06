@@ -74,13 +74,11 @@ gnuplot -e "
     set xdata time;
     set timefmt '%Y-%m-%d';
     set format x '%Y-%m-%d';
-    set xrange ['$min_date':'$max_date'];
-    set xtics 7;
     set grid y;
     set boxwidth 1.0 relative;
     set style fill transparent solid 0.5 noborder;
-    plot '$tmp_file' using 0:2 with boxes title 'authored',
-         '' using 0:3 with boxes title 'committed';
+    plot '$tmp_file' using 1:2 with boxes title 'authored',
+         '' using 1:3 with boxes title 'committed';
 "
 
 

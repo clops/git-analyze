@@ -9,7 +9,7 @@ cut -d ":" -f 1 | \
 sort | \
 uniq -c | \
 gnuplot -e "
-    set output 'lines-per-hour.png';
+    set output 'commits-per-hour.png';
     set term png truecolor giant;
     set ylabel 'Commits';
     set grid y;

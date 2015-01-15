@@ -20,7 +20,8 @@ set output 'todos-per-merge.png';
 set term png truecolor giant;
 set xdata time;
 set timefmt  \"'%Y-%m-%dT%H:%M:%S'\";
-set format x \"'%Y-%m-%dT%H:%M:%S'\";
+set xtics 2419200;
+set format x \"'%Y-%m-%d'\";
 plot '$tmpfile' using 1:2 with lines notitle;
 "
 
